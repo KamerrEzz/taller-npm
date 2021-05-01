@@ -3,7 +3,8 @@
   "version": "0.1.8",
   "description": "un npm simple para operaciones matematicas",
   "main": "index.js",
-  "keywords": ["operations", "original"],
+  "repository": "https://github.com/kamerrezz/taller-npm",
+  "keywords": ["operations", "kamerr ezz"],
   "author": {
     "email": "kamerr@kamerrezz.com",
     "name": "kamerrezz",
