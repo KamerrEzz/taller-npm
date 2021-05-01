@@ -1,0 +1,13 @@
+{
+  "name": "sumitas",
+  "version": "0.1.8",
+  "description": "un npm simple para operaciones matematicas",
+  "main": "index.js",
+  "keywords": ["operations", "original"],
+  "author": {
+    "email": "kamerr@kamerrezz.com",
+    "name": "kamerrezz",
+    "url": "https://kamerrezz.com"
+  },
+  "license": "ISC"
+}
