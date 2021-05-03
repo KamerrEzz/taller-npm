@@ -3,5 +3,5 @@ module.exports.numero = (n) => {
 }
 
 module.exports.resultado = () => {
-
+    
 }
