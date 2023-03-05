@@ -1,11 +1,14 @@
-module.exports = {
-    resta: (a,b) => {
-        return a - b;
-    },
-    restatres(a, b, c) {
-        return a - b - c;
-    },
-    restacuatro: function(a,b,c,d) {
-
+const resta = (...args) => {
+    if(args.length < 0) {
+        return new Error('Debe haber al menos más de un número')
     }
-};
+    let resta = args[0];
+    args.forEach((n, i) => {
+        if(typeof n !== "number") throw new Error(`${n} is not a number in position ${i}`)
+        if(i === 0) return;
+        resta -= n
+    })
+    return resta
+}
+
+module.exports = resta

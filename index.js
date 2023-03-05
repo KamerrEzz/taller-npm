@@ -3,5 +3,5 @@ module.exports = {
     resta: require('./src/resta'),
     multiplicacion: require('./src/multiplicacion'),
     division: require('./src/division'),
-    //sacarPorcentaje: require('./src/sacarPorcentaje'),
+    sacarPorcentaje: require('./src/sacarPorcentaje'),
 }

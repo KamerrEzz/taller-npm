@@ -1,15 +1,15 @@
 const {numero} = require('../utils/errorHandler')
 
-module.exports = {
-    suma: (a,b) => {
-        numero(a)
-        numero(b)
-        return a + b;
-    },
-    sumatres(a, b, c) {
-        return a + b + c;
-    },
-    sumacuatro: function(a,b,c,d) {
-
+const suma = (...args) => {
+    if(args.length < 0) {
+        return new Error('Debe haber al menos más de un número')
     }
-};
+    let suma = 0;
+    args.forEach((n, i) => {
+        if(typeof n !== "number") throw new Error(`${n} is not a number in position ${i}`)
+        suma += n
+    })
+    return suma
+}
+
+module.exports = suma
